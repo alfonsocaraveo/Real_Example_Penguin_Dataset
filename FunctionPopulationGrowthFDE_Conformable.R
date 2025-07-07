@@ -1,0 +1,9 @@
+FunctionPopulationGrowthFDE_Conformable<-function(TimeValue,VecPar)
+{
+  vx0<-VecPar[1]
+  vK<-VecPar[2]
+  vlambda<-VecPar[3]
+  valpha<-VecPar[4]
+  vf<-(vK*vx0)/(vx0+(vK-vx0)*exp(-vlambda*(TimeValue^valpha)/valpha))
+  return(vf)
+}
