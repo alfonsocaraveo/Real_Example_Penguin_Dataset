@@ -7,13 +7,23 @@ chick growth in little penguins (Eudyptula minor) during years of high and low b
 This repository contains the following R scripts, each serving a specific purpose in the workflow:
 
 # 1. .R
-**Description:** Script for.
+**Description:** Script for model selection, where we estimate the MLE of the Caputo, conformable, and classical logistic models using data up to day 49.
+We plot chick age versus body mass growth for the year 2002, and provide a graphical comparison of the models, along with the calculation of normal bands for each one.
+
+Additionally, we compute the relative profile likelihood for each parameter **alpha**, **x0**, **K**, and **lambda**.
+For each parameter, we calculate the likelihood-based confidence intervals and perform both graphical and numerical comparisons.
+
+We also compute the efficiency index for the Caputo and conformable models. Finally, we assess the predictive performance of each model beyond day 49. 
 
 **Libraries Used:** 
 
-- `lubridate`: For date and time manipulation.
-- `mnormt`: For multivariate normal distribution functions.
+- `nlme`: Used for example datasets.
+- `FlexParamCurve`: Used for example datasets.
 
+- `ggplot2`: Used for plotting.
+- `ggbreak`: Used for plotting.
+- `ggthemes`: Used for plotting.
+- `fields`: Used for plotting.
 
 # 2. FunctionPopulationGrowthFDE_Conformable.R
 **Description:** Implements the solution of the fractional logistic model considering the conformable derivative.
