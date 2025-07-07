@@ -1,0 +1,16 @@
+FunctionProfileLCI<-function(Relative,ValoresParametro,Nivel)
+{
+  Indice1<-1
+  while(Relative[Indice1]<Nivel)
+  {
+    Indice1<-Indice1+1
+  }
+  LI<-ValoresParametro[Indice1]
+  Indice2<-length(ValoresParametro)
+  while(Relative[Indice2]<Nivel)
+  {
+    Indice2<-Indice2-1
+  }
+  LS<-ValoresParametro[Indice2]
+  return(c(LI,LS))
+}
