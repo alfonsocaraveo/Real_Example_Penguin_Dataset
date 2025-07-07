@@ -1,6 +1,6 @@
-FunctionNegativeLogProfileLikFDEx0_Caputo<-function(VecPar123,VecTimeObs,VecObs,h,m0,VecPar1)
+FunctionNegativeLogProfileLikFDEx0_Caputo<-function(VecPar234,VecTimeObs,VecObs,h,m0,VecPar1)
 {
-  VecPar<-c(VecPar1,VecPar123)
+  VecPar<-c(VecPar1,VecPar234)
   PopulationGrowthModel<-c()
   n<-length(VecTimeObs)
   Sol <- FunctionPopulationGrowthFDE_Caputo(VecPar,h,m0)
