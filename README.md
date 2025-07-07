@@ -65,3 +65,93 @@ This repository contains the following R scripts, each serving a specific purpos
 - `VecTimeObs`: A vector of time points associated with each observation.
 - `VecObs`: A vector of observed data.
 
+# 8. FunctionNegativeLogProfileLikFDE_Conformable.R
+**Description:** Implements the negative profile loglikelihood function for the the parameter of interest **alpha** considering the conformable derivative.
+
+**Input:**
+- `VecPar123`: A vector containing the parameters **x0**, **K**, and **lambda**.
+- `VecTimeObs`: A vector of time points associated with each observation.
+- `VecObs`: A vector of observed data.
+- `VecPar4`: A numeric value for the parameter of interest, **alpha**.
+
+ # 9. FunctionNegativeLogProfileLikFDE_Caputo.R
+**Description:** Implements the negative profile loglikelihood function for the the parameter of interest **alpha** considering the Caputo derivative.
+
+**Input:**
+- `VecPar123`: A vector containing the parameters **x0**, **K**, and **lambda**.
+- `VecTimeObs`: A vector of time points associated with each observation.
+- `VecObs`: A vector of observed data.
+- `h`: The step size for the computation.
+- `m0`: The total number of points to generate.
+- `VecPar4`: A numeric value for the parameter of interest, **alpha**.
+
+# 10. FunctionNegativeLogProfileLikFDEx0_Conformable.R
+**Description:** Implements the negative profile loglikelihood function for the the parameter of interest **x0** considering the conformable derivative.
+
+**Input:**
+- `VecPar234`: A vector containing the parameters **K**, **lambda**, and **alpha**.
+- `VecTimeObs`: A vector of time points associated with each observation.
+- `VecObs`: A vector of observed data.
+- `VecPar1`: A numeric value for the parameter of interest, **x0**.
+
+ # 11. FunctionNegativeLogProfileLikFDEx0_Caputo.R
+**Description:** Implements the negative profile loglikelihood function for the the parameter of interest **x0** considering the Caputo derivative.
+
+**Input:**
+- `VecPar234`: A vector containing the parameters **K**, **lambda**, and **alpha**.
+- `VecTimeObs`: A vector of time points associated with each observation.
+- `VecObs`: A vector of observed data.
+- `h`: The step size for the computation.
+- `m0`: The total number of points to generate.
+- `VecPar1`: A numeric value for the parameter of interest, **x0**.
+
+# 12. FunctionNegativeLogProfileLikFDEK_Conformable.R
+**Description:** Implements the negative profile loglikelihood function for the the parameter of interest **K** considering the conformable derivative.
+
+**Input:**
+- `VecPar134`: A vector containing the parameters **x0**, **lambda**, and **alpha**.
+- `VecTimeObs`: A vector of time points associated with each observation.
+- `VecObs`: A vector of observed data.
+- `VecPar2`: A numeric value for the parameter of interest, **K**.
+
+ # 13. FunctionNegativeLogProfileLikFDEK_Caputo.R
+**Description:** Implements the negative profile loglikelihood function for the the parameter of interest **K** considering the Caputo derivative.
+
+**Input:**
+- `VecPar134`: A vector containing the parameters **x0**, **lambda**, and **alpha**.
+- `VecTimeObs`: A vector of time points associated with each observation.
+- `VecObs`: A vector of observed data.
+- `h`: The step size for the computation.
+- `m0`: The total number of points to generate.
+- `VecPar2`: A numeric value for the parameter of interest, **K**.
+
+# 14. FunctionNegativeLogProfileLikFDElambda_Conformable.R
+**Description:** Implements the negative profile loglikelihood function for the the parameter of interest **lambda** considering the conformable derivative.
+
+**Input:**
+- `VecPar124`: A vector containing the parameters **x0**, **K**, and **alpha**.
+- `VecTimeObs`: A vector of time points associated with each observation.
+- `VecObs`: A vector of observed data.
+- `VecPar3`: A numeric value for the parameter of interest, **lambda**.
+
+ # 15. FunctionNegativeLogProfileLikFDElambda_Caputo.R
+**Description:** Implements the negative profile loglikelihood function for the the parameter of interest **lambda** considering the Caputo derivative.
+
+**Input:**
+- `VecPar124`: A vector containing the parameters **x0**, **K**, and **alpha**.
+- `VecTimeObs`: A vector of time points associated with each observation.
+- `VecObs`: A vector of observed data.
+- `h`: The step size for the computation.
+- `m0`: The total number of points to generate.
+- `VecPar3`: A numeric value for the parameter of interest, **lambda**.
+
+# 16. FunctionProfileLCI.R
+**Description:**  
+Computes the profile likelihood confidence intervals for a specified level.
+
+**Inputs:**  
+- `Relative`: A vector containing the relative likelihood values.  
+- `ValoresParametro`: A vector containing the parameter values associated with the relative likelihood.  
+- `Nivel`: The desired confidence level for the likelihood interval, denoted as **c**.
+
+  
