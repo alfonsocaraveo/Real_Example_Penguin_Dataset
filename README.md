@@ -6,7 +6,7 @@ chick growth in little penguins (Eudyptula minor) during years of high and low b
 # Scripts Overview for the model selection analysis
 This repository contains the following R scripts, each serving a specific purpose in the workflow:
 
-# 1. .R
+# 1. ProgramPenguin.R
 **Description:** Script for model selection, where we estimate the MLE of the Caputo, conformable, and classical logistic models using data up to day 49.
 We plot chick age versus body mass growth for the year 2002, and provide a graphical comparison of the models, along with the calculation of normal bands for each one.
 
